@@ -6,7 +6,7 @@ import { Container } from './styles';
 const Header: React.FC = () => {
   return <Container>
       Hello World
-      <Switch onChange={()=>console.log("lol")} checked={false} />
+      <Switch onChange={()=>console.log("lol")} checked={true} />
   </Container>;
 }
 
