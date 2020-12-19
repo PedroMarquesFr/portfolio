@@ -7,6 +7,6 @@ export default {
 
     background: "#0E0D34",
     frontItems: "#21204B",
-    text: "#DFDDF4",
+    text: "#B5B3CD",
   },
 };

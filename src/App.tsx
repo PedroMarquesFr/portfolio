@@ -18,6 +18,7 @@ function App() {
         <GlobalStyles />
         <Header toggleTheme={toggleTheme} />
         <Section/>
+        <Ornament />
       </div>
     </ThemeProvider>
   );
