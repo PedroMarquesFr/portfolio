@@ -14,5 +14,7 @@ export default createGlobalStyle`
     background:${(props) => props.theme.colors.background};
     font-size:18px;  
     color:${(props) => props.theme.colors.text};
+    position:relative;
+    overflow: hidden;
   }
 `;
