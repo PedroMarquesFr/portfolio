@@ -1,6 +1,7 @@
 import React from "react";
+import Info from './Info';
 
-import { Container, Info, Projects } from "./styles";
+import { Container, Projects } from "./styles";
 
 const Section: React.FC = () => {
   return (
