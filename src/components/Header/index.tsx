@@ -14,7 +14,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
     <Container>
       Hello World
       <Switcher>
-        <BiSun style={{ fill: "#21204B" }} />
+        <BiMoon style={{ fill: "#F0EFFF" }} />
         <Switch
           onChange={() => {
             toggleTheme();
@@ -27,9 +27,8 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
           onHandleColor="#DFDDF4"
           checkedIcon={false}
           uncheckedIcon={false}
- 
         />
-        <BiMoon style={{ fill: "#F0EFFF" }} />
+        <BiSun style={{ fill: "#21204B" }} />
       </Switcher>
     </Container>
   );

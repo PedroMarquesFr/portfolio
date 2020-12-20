@@ -12,7 +12,15 @@ export default createGlobalStyle`
   }
   body{
     background:${(props) => props.theme.colors.background};
-    font-size:14px;  
+    font-size:18px;  
     color:${(props) => props.theme.colors.text};
+    position:relative;
+    overflow: hidden;
+    @media only screen and (max-width: 1200px) {
+      & {
+        overflow: unset;
+      }
+    }
+    height:100vh;
   }
 `;
