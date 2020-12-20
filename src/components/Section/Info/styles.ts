@@ -1,6 +1,11 @@
 import styled from "styled-components";
 export const Container = styled.div`
-width:50%;`;
+width:50%;
+@media only screen and (max-width: 1200px) {
+    & {
+        width:unset;
+    }
+  }`;
 export const Resume = styled.p`
   font-size: 18px;
   line-height:1.5;

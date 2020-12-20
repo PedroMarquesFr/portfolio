@@ -16,5 +16,11 @@ export default createGlobalStyle`
     color:${(props) => props.theme.colors.text};
     position:relative;
     overflow: hidden;
+    @media only screen and (max-width: 1200px) {
+      & {
+        overflow: unset;
+      }
+    }
+    height:100vh;
   }
 `;
