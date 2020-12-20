@@ -1,14 +1,13 @@
 import styled from "styled-components";
 export const Container = styled.div`
-width:50%;
-@media only screen and (max-width: 1200px) {
-    & {
-        width:unset;
-    }
-  }`;
+  width: 50%;
+  @media only screen and (max-width: 1200px) {
+    width: unset;
+  }
+`;
 export const Resume = styled.p`
   font-size: 18px;
-  line-height:1.5;
+  line-height: 1.5;
 `;
 export const Title = styled.h1`
   font-size: 48px;
