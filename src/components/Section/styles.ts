@@ -7,7 +7,12 @@ export const Container = styled.div`
   margin-top: 30px;
   @media only screen and (max-width: 1200px) {
     & {
-      flex-direction:column;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    & {
+      padding: 0 5vw;
     }
   }
 `;
