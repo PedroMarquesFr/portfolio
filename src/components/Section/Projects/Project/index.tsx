@@ -1,11 +1,11 @@
 import React from "react";
-
-import { Container } from "./styles";
+// import { DefaultTag, ReactTag, CSSTag, HTMLTag, JSTag, StyledCompTag } from "../../../Tags/styles";
+import { Container, InstutitionName} from "./styles";
 
 const Project: React.FC = () => {
   return (
     <Container>
-      <p>instituição</p>
+      <InstutitionName>instituição</InstutitionName>
       <h1>Nome do projeto</h1>
       <p>
         descrição do projeto Lorem ipsum dolor sit amet consectetur adipisicing
