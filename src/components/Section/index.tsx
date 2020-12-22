@@ -7,8 +7,8 @@ import { Container} from "./styles";
 const Section: React.FC = () => {
   return (
     <Container>
-      <Info>asddasdasd</Info>
-      <Projects>sadasdsadasdasd</Projects>
+      <Info/>
+      <Projects/>
     </Container>
   );
 };

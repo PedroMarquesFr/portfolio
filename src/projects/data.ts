@@ -7,8 +7,8 @@ export const porjects = [
   },
   {
     instituition: "Trybe",
-    title: "Frontend Online Store",
+    title: "blalalaab",
     description:
-      "In this project, I was able to solidify the concepts of state and component plus routes in React",
+      "lorsaasdasdasdadem",
   },
 ];

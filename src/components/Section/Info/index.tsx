@@ -10,7 +10,7 @@ const Info: React.FC = () => {
       <HrLong />
       <Title>Hi, I'm Pedro</Title>
       <Resume>
-        I have been developing some React applications, from movies CRUD with
+        I have been developing some React applications over the year, from movies CRUD with
         route and asynchronicity to online stores using Mercado Livre API, which
         simulates a product purchase with rating and cart mechanisms, all done
         with core and advanced React concepts like component life cycle, hooks,
