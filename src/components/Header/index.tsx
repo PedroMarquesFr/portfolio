@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Switch from "react-switch";
+import { Link } from "react-router-dom";
 
-import { Container, Switcher } from "./styles";
-import { BiSun, BiMoon } from "react-icons/bi";
+import { Container, Switcher, Sun, Moon, RoutesContainer } from "./styles";
 
 interface Props {
   toggleTheme(): void;
@@ -12,9 +12,14 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   const [swift, setSwift] = useState<boolean>(true);
   return (
     <Container>
-      Hello World
+      <h4>{"<PedroMFr/>"}</h4>
+
       <Switcher>
-        <BiMoon style={{ fill: "#F0EFFF" }} />
+        <RoutesContainer>
+          <p>About</p>
+          <p>Projects</p>
+          <p>About</p>
+        </RoutesContainer>
         <Switch
           onChange={() => {
             toggleTheme();
@@ -25,10 +30,9 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
           checked={swift}
           offHandleColor="#0E0D34"
           onHandleColor="#DFDDF4"
-          checkedIcon={false}
-          uncheckedIcon={false}
+          checkedIcon={<Moon />}
+          uncheckedIcon={<Sun />}
         />
-        <BiSun style={{ fill: "#21204B" }} />
       </Switcher>
     </Container>
   );

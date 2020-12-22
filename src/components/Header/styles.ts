@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BiSun, BiMoon } from "react-icons/bi";
 
 export const Container = styled.div`
   height: 80px;
@@ -17,7 +18,29 @@ export const Container = styled.div`
   }
 `;
 
+export const RoutesContainer = styled.div`
+  display:flex;
+  & p{
+    padding-right:8px;
+  }
+`;
+
+
 export const Switcher = styled.div`
   display: flex;
   align-items: center;
+  position: relative;
+  width: 56px;
 `;
+
+export const Sun = styled(BiSun)`
+  fill: ${props=>props.theme.colors.background};
+  margin-top:2px;
+`;
+
+export const Moon = styled(BiMoon)`
+  fill: ${props=>props.theme.colors.background};
+  margin-top:2px;
+  margin-left:3px;
+`;
+

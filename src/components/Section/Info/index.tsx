@@ -1,20 +1,20 @@
 import React from "react";
 
-import { Container, Resume, ProfileImg,Title } from "./styles";
+import { Container, Resume, ProfileImg, Title } from "./styles";
+import { HrLong } from "../../Ornament/style";
 
 const Info: React.FC = () => {
   return (
     <Container>
       <ProfileImg src="https://i.ibb.co/BKFL5GX/imagem.png"></ProfileImg>
-      <Title>Oi, sou o Pedro</Title>
+      <HrLong />
+      <Title>Hi, I'm Pedro</Title>
       <Resume>
-        Já desenvolvi diversas aplicações em React, desde CRUD de filmes com
-        roteamento e assincronicidade a loja online, feita com API do Mercado
-        Livre, que simula a compra de um produto, avaliações e adição ao
-        carrinho, sempre me preocupo em usar as melhores práticas do mercado. Em
-        todos os projetos me esforço para desenvolver uma boa UI embasada no
-        estudo de grid, formas, cores, tipografia, sempre focando na harmônia e
-        consistência.
+        I have been developing some React applications over the year, from movies CRUD with
+        route and asynchronicity to online stores using Mercado Livre API, which
+        simulates a product purchase with rating and cart mechanisms, all done
+        with core and advanced React concepts like component life cycle, hooks,
+        context API. I Love Redux!
       </Resume>
     </Container>
   );

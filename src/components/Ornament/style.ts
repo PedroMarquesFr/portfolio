@@ -15,3 +15,16 @@ export const Container = styled.div`
   border-radius: 60%;
   z-index: -1;
 `;
+
+export const HrLong = styled.div`
+  padding: 0;
+  height: 4px;
+  width: 100px;
+  background-color: ${(props) => props.theme.colors.primary};
+  margin-top: 24px;
+  border-radius: 50px;
+`;
+export const HrShort = styled(HrLong)`
+  margin-top: 8px;
+  width: 40px;
+`;
