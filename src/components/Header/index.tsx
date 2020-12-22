@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Switch from "react-switch";
-import { Link } from "react-router-dom";
+//
 
 import { Container, Switcher, Sun, Moon, RoutesContainer } from "./styles";
 
@@ -13,13 +13,12 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <Container>
       <h4>{"<PedroMFr/>"}</h4>
-
+      <RoutesContainer>
+        <p>About</p>
+        <p>Projects</p>
+        <p>Contact</p>
+      </RoutesContainer>
       <Switcher>
-        <RoutesContainer>
-          <p>About</p>
-          <p>Projects</p>
-          <p>About</p>
-        </RoutesContainer>
         <Switch
           onChange={() => {
             toggleTheme();
