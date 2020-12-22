@@ -20,8 +20,17 @@ export const Container = styled.div`
 
 export const RoutesContainer = styled.div`
   display:flex;
-  & p{
-    padding-right:8px;
+  > p{
+    margin-right:30px;
+    padding:6px 10px;
+    font-size:21px; 
+    transition:.5s;
+    font-weight:500;
+    &:hover{
+      background-color:${props=>props.theme.colors.primary};
+      border-radius:12px;
+      color:${props=>props.theme.colors.frontItems};
+    }
   }
 `;
 
