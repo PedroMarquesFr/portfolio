@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
+import { ThemeContext } from 'styled-components';
 import Switch from "react-switch";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { Container, Switcher, Sun, Moon, RoutesContainer } from "./styles";
 
-interface Props {
-  toggleTheme(): void;
-}
+// interface Props {
+//   toggleTheme(): void;
+// }
 
-const Header: React.FC<Props> = ({ toggleTheme }) => {
+const Header: React.FC = () => {
   const [swift, setSwift] = useState<boolean>(true);
+  const {toggleTheme} = useContext(ThemeContext);
   return (
     <Container>
       <h4>{"<PedroMFr/>"}</h4>

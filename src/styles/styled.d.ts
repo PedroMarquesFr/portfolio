@@ -12,6 +12,7 @@ declare module "styled-components" {
       frontItems: string,
       text: string;
     };
+    toggleTheme:()=>void;
   }
 }
 

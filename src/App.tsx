@@ -13,10 +13,10 @@ function App() {
     setTheme(theme.title === "dark" ? light : dark);
   };
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={{...theme, toggleTheme}}>
       <div className="App">
         <GlobalStyles />
-        <Header toggleTheme={toggleTheme} />
+        <Header />
         <Section/>
       </div>
     </ThemeProvider>
