@@ -3,9 +3,9 @@ import { ThemeProvider } from "styled-components";
 import light from "./styles/themes/light";
 import dark from "./styles/themes/dark";
 
-import Header from "./components/Header";
 import GlobalStyles from "./styles/global";
-import Section from "./components/Section";
+import Routes from "./routes";
+
 
 function App() {
   const [theme, setTheme] = useState(light);
@@ -14,11 +14,8 @@ function App() {
   };
   return (
     <ThemeProvider theme={{...theme, toggleTheme}}>
-      <div className="App">
         <GlobalStyles />
-        <Header />
-        <Section/>
-      </div>
+        <Routes/>
     </ThemeProvider>
   );
 }
