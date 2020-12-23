@@ -4,7 +4,7 @@ import Section from "../components/Section";
 
 // import { Container } from './styles';
 
-const pages: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <Header />
@@ -13,4 +13,4 @@ const pages: React.FC = () => {
   );
 };
 
-export default pages;
+export default Home;

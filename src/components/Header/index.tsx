@@ -1,5 +1,5 @@
-import React, { useState,useContext } from "react";
-import { ThemeContext } from 'styled-components';
+import React, { useState, useContext } from "react";
+import { ThemeContext } from "styled-components";
 import Switch from "react-switch";
 // import { Link } from "react-router-dom";
 
@@ -11,17 +11,16 @@ import { Container, Switcher, Sun, Moon, RoutesContainer } from "./styles";
 
 const Header: React.FC = () => {
   const [swift, setSwift] = useState<boolean>(true);
-  const {toggleTheme} = useContext(ThemeContext);
+  const { toggleTheme } = useContext(ThemeContext);
   return (
     <Container>
       <h4>{"<PedroMFr/>"}</h4>
-
+      <RoutesContainer>
+        <p>About</p>
+        <p>Projects</p>
+        <p>Contact</p>
+      </RoutesContainer>
       <Switcher>
-        <RoutesContainer>
-          <p>About</p>
-          <p>Projects</p>
-          <p>About</p>
-        </RoutesContainer>
         <Switch
           onChange={() => {
             toggleTheme();
