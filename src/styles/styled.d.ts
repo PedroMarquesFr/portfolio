@@ -11,6 +11,13 @@ declare module "styled-components" {
       background: string;
       frontItems: string;
       text: string;
+      textsec:string;
+
+      react:string,
+      css:string,
+      html:string,
+      js:string,
+      sc:string,
     };
     toggleTheme: () => void;
   }

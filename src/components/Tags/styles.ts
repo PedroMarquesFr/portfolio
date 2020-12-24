@@ -17,37 +17,37 @@ export const DefaultTag = styled.p`
 `;
 
 export const ReactTag = styled(DefaultTag)`
-    background-color: #003451;
+    background-color: ${props=>props.theme.colors.react};
     &::before {
     content: "React";
   }
-   color: #F9F8F8;/* 31322F*/
+   color: ${props=>props.theme.colors.textsec};/* 31322F*/
 `;
 export const CSSTag = styled(DefaultTag)`
-    background-color: #001252;
+    background-color: ${props=>props.theme.colors.css};
     &::before {
     content: "CSS";
   }
-  color: #F9F8F8;
+  color: ${props=>props.theme.colors.textsec};
 `;
 export const HTMLTag = styled(DefaultTag)`
-    background-color: #521D00;
+    background-color: ${props=>props.theme.colors.html};
     &::before {
     content: "HTML";
   }
-  color: #F9F8F8;
+  color: ${props=>props.theme.colors.textsec};
 `;
 export const JSTag = styled(DefaultTag)`
-    background-color: #524000;
+    background-color: ${props=>props.theme.colors.js};
     &::before {
     content: "JavaScript";
   }
-  color: #F9F8F8;
+  color: ${props=>props.theme.colors.textsec};
 `;
 export const StyledCompTag = styled(DefaultTag)`
-    background-color: #53000F;
+    background-color: ${props=>props.theme.colors.sc};
     &::before {
     content: "StyledComp";
   }
-  color: #F9F8F8;
+  color: ${props=>props.theme.colors.textsec};
 `;
