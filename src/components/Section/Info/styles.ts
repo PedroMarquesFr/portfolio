@@ -27,6 +27,6 @@ export const ProfileImg = styled.img`
 
 export const TagWrapper = styled.div`
   display: flex;
-  margin-top:30px;
-  flex-wrap:wrap;
+  margin-top: 30px;
+  flex-wrap: wrap;
 `;
