@@ -24,3 +24,9 @@ export const ProfileImg = styled.img`
   border-radius: 50%;
   border: 5px solid ${(props) => props.theme.colors.frontItems};
 `;
+
+export const TagWrapper = styled.div`
+  display: flex;
+  margin-top:30px;
+  flex-wrap:wrap;
+`;

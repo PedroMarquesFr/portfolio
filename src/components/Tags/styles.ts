@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const DefaultTag = styled.div`
+export const DefaultTag = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30px;
-  width: 60px;
-  margin:2px;
+  padding:0 5px;
+  margin:4px;
   border-radius: 6px;
   background-color: #222531;
   &::before {
@@ -17,37 +17,37 @@ export const DefaultTag = styled.div`
 `;
 
 export const ReactTag = styled(DefaultTag)`
-    background-color: #015381;
+    background-color: #003451;
     &::before {
     content: "React";
   }
-  color: #31322F;
+   color: #F9F8F8;/* 31322F*/
 `;
 export const CSSTag = styled(DefaultTag)`
-    background-color: #001C80;
+    background-color: #001252;
     &::before {
     content: "CSS";
   }
-  color: #31322F;
+  color: #F9F8F8;
 `;
 export const HTMLTag = styled(DefaultTag)`
-    background-color: #7D2D00;
+    background-color: #521D00;
     &::before {
     content: "HTML";
   }
-  color: #31322F;
+  color: #F9F8F8;
 `;
 export const JSTag = styled(DefaultTag)`
-    background-color: #6F5600;
+    background-color: #524000;
     &::before {
-    content: "JS";
+    content: "JavaScript";
   }
-  color: #31322F;
+  color: #F9F8F8;
 `;
 export const StyledCompTag = styled(DefaultTag)`
-    background-color: #840018;
+    background-color: #53000F;
     &::before {
-    content: "StyC";
+    content: "StyledComp";
   }
   color: #F9F8F8;
 `;
