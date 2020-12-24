@@ -10,11 +10,11 @@ const dark = {
     text: "#B5B3CD",
     textsec: "#EEEDFB",
 
-    react: "#003451",
-    html: "#521D00",
-    css: "#001252",
-    js: "#524000",
-    sc: "#53000F",
+    react: "#0175B7",
+    html: "#B94300",
+    css: "#0028B8",
+    js: "#B88F00",
+    sc: "#B80021",
   },
 };
 

@@ -10,11 +10,11 @@ const light =  {
     text: "#56546D",
     textsec: "#1C1A33",
 
-    react: "#0195E8",
-    html: "#ED5601",
-    css: "#1044F9",
-    js: "#E5B300",
-    sc: "#F22A4E",
+    react: "#5BCEED",
+    html: "#F1694B",
+    css: "#4B79F1",
+    js: "#F1DC4B",
+    sc: "#EE598A",
   },
 };
 
