@@ -31,6 +31,7 @@ export const Switcher = styled.div`
   align-items: center;
   position: relative;
   width: 56px;
+  margin-left:30px;
 `;
 
 export const Sun = styled(BiSun)`
