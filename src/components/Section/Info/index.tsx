@@ -1,7 +1,14 @@
 import React from "react";
 
-import { Container, Resume, ProfileImg, Title } from "./styles";
+import { Container, Resume, ProfileImg, Title, TagWrapper } from "./styles";
 import { HrLong } from "../../Ornament/style";
+import {
+  ReactTag,
+  CSSTag,
+  HTMLTag,
+  JSTag,
+  StyledCompTag,
+} from "../../Tags/styles";
 
 const Info: React.FC = () => {
   return (
@@ -10,12 +17,19 @@ const Info: React.FC = () => {
       <HrLong />
       <Title>Hi, I'm Pedro</Title>
       <Resume>
-        I have been developing some React applications over the year, from movies CRUD with
-        route and asynchronicity to online stores using Mercado Livre API, which
-        simulates a product purchase with rating and cart mechanisms, all done
-        with core and advanced React concepts like component life cycle, hooks,
-        context API. I Love Redux!
+        I have been developing some React applications over the year, from
+        movies CRUD with route and asynchronicity to online stores using Mercado
+        Livre API, which simulates a product purchase with rating and cart
+        mechanisms, all done with core and advanced React concepts like
+        component life cycle, hooks, context API. I Love Redux!
       </Resume>
+      <TagWrapper>
+        <ReactTag />
+        <CSSTag />
+        <HTMLTag />
+        <JSTag />
+        <StyledCompTag />
+      </TagWrapper>
     </Container>
   );
 };
