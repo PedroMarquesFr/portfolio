@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   padding: 30px;
@@ -17,20 +18,25 @@ export const Container = styled.div`
   transition: 0.5s;
   &:hover {
     box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.05);
-    padding:38px 10px 38px 38px ;
+    padding: 38px 22px 38px 38px;
   }
 `;
 
 export const InstutitionName = styled.p`
   color: ${(props) => props.theme.colors.primary};
   font-weight: 500;
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 `;
 
 export const TagWrapper = styled.div`
   display: flex;
-  align-items:center;
+  align-items: center;
   margin: 8px 0 0 0;
+`;
+
+export const UnstyledLink = styled(Link)`
+  text-decoration: none;
+  color: unset;
 `;

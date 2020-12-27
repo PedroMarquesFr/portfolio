@@ -92,7 +92,7 @@ interface Props {
 export const DefaultDot = styled.div<Props>`
   height: 7px;
   width: 7px;
-  margin: 0 7px 0 0;
+  margin: 0 0 0 7px;
   background-color: ${(props) => selector(props.tag, props.theme.colors)};
   border-radius: 50%;
 `;
