@@ -7,9 +7,14 @@ export const Container = styled.div`
     padding-bottom: 60px;
   }
 `;
+
+interface Props{
+  bold:boolean;
+}
 export const Resume = styled.p`
   font-size: 18px;
   line-height: 1.5;
+  font-weight:${(props:Props)=>props.bold?700:400};
 `;
 export const Title = styled.h1`
   font-size: 48px;

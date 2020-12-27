@@ -12,6 +12,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 17vw;
+  box-shadow: 0px 0px 0px 2px rgba(50, 50, 50, 0.3);
   @media only screen and (max-width: 800px) {
     & {
       padding: 0 5vw;
