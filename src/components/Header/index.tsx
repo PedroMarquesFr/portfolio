@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "styled-components";
 import Switch from "react-switch";
-// import { Link } from "react-router-dom";
 
-import { Container, Switcher, Sun, Moon, RoutesContainer } from "./styles";
+import { Container, Switcher, Sun, Moon, IconLink, GitHubIcon } from "./styles";
 
 // interface Props {
 //   toggleTheme(): void;
@@ -14,23 +13,24 @@ const Header: React.FC = () => {
   const { toggleTheme } = useContext(ThemeContext);
   return (
     <Container>
+      <IconLink
+        to={{ pathname: "https://github.com/PedroMarquesFr" }}
+        target="_blank"
+      >
+        <GitHubIcon />
+      </IconLink>
       <h4>{"<PedroMFr/>"}</h4>
-      <RoutesContainer>
-        <p>About</p>
-        <p>Projects</p>
-        <p>Contact</p>
-      </RoutesContainer>
       <Switcher>
         <Switch
           onChange={() => {
             toggleTheme();
             setSwift(!swift);
           }}
-          offColor="#DFDDF4"
-          onColor="#0E0D34"
+          offColor="#B5B3CD"
+          onColor="#56546D"
           checked={swift}
-          offHandleColor="#0E0D34"
-          onHandleColor="#DFDDF4"
+          offHandleColor="#56546D"
+          onHandleColor="#B5B3CD"
           checkedIcon={<Moon />}
           uncheckedIcon={<Sun />}
         />
