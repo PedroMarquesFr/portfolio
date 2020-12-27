@@ -52,14 +52,47 @@ export const StyledCompTag = styled(DefaultTag)`
   color: ${(props) => props.theme.colors.textsec};
 `;
 
+interface Colors {
+  primary: string;
+  secundary: string;
+
+  background: string;
+  frontItems: string;
+  text: string;
+  textsec: string;
+
+  react: string;
+  css: string;
+  html: string;
+  js: string;
+  sc: string;
+}
+
+const selector = (tag: string, colors: Colors): string => {
+  switch (tag) {
+    case "js":
+      return colors.js;
+    case "css":
+      return colors.css;
+    case "html":
+      return colors.html;
+    case "react":
+      return colors.react;
+    case "sc":
+      return colors.sc;
+
+    default:
+      return "false";
+  }
+};
 
 interface Props {
-  type: string;
+  tag: string;
 }
-export const DefaultDot = styled.div`
-  height: 5px;
-  width: 5px;
-  background-color:red;
-  border-radius:50%;
-
+export const DefaultDot = styled.div<Props>`
+  height: 7px;
+  width: 7px;
+  margin: 0 7px 0 0;
+  background-color: ${(props) => selector(props.tag, props.theme.colors)};
+  border-radius: 50%;
 `;

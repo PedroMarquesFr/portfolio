@@ -28,4 +28,6 @@ export const InstutitionName = styled.p`
 
 export const TagWrapper = styled.div`
   display: flex;
+  align-items:center;
+  margin: 8px 0 0 0;
 `;

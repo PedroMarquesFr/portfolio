@@ -11,19 +11,22 @@ export const projects = [
   {
     instituition: "Trybe",
     title: "blalalaab",
-    description: "lorsaasdasdasdademgfdsfdsfdsfdsfdsfdsf",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum temporibus eligendi pariatur vel ut fugiat quisquam voluptas. Architecto tenetur nulla corporis nobis cumque perspiciatis non libero sed nemo qui!",
     tags: ["js", "css", "html", "react", "sc"],
   },
   {
     instituition: "Trybe",
     title: "blalalaab",
-    description: "lorsaasdasdasdademgfdsfdsfdsfdsfdsfdsf",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil labore animi asperiores ad neque cum velit sunt, repellat culpa dolores doloremque, illo eius! Laboriosam beatae veniam aspernatur repellendus sint?",
     tags: ["js", "css", "html", "react", "sc"],
   },
   {
     instituition: "Trybe",
     title: "blalalaab",
-    description: "lorsaasdasdasdademgfdsfdsfdsfdsfdsfdsf",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil labore animi asperiores ad neque cum velit sunt, repellat culpa dolores doloremque, illo eius! Laboriosam beatae veniam aspernatur repellendus sint?",
     tags: ["js", "css", "html", "react", "sc"],
   },
 ];
