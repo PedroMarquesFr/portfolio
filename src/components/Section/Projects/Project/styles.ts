@@ -17,7 +17,8 @@ export const Container = styled.div`
   }
   transition: 0.5s;
   &:hover {
-    box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.05);
+    box-shadow: 0px 0px 0px 5px rgba(50, 50, 50, 0.3);
+    /* box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.05); */
     padding: 38px 22px 38px 38px;
   }
 `;
@@ -33,7 +34,6 @@ export const InstutitionName = styled.p`
 export const TagWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: 8px 0 0 0;
 `;
 
 export const UnstyledLink = styled(Link)`

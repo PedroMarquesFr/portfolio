@@ -26,7 +26,7 @@ const Project: React.FC<project> = ({ project }) => {
           {instituition}{" "}
           <TagWrapper>
             {tags.map((tag) => (
-              <DefaultDot tag={tag} />
+              <DefaultDot tag={tag} key={tag}/>
             ))}
           </TagWrapper>
         </InstutitionName>

@@ -14,6 +14,7 @@ export const DefaultTag = styled.p`
   }
   color: white;
   font-weight: 600;
+  opacity: 0.85;
 `;
 
 export const ReactTag = styled(DefaultTag)`

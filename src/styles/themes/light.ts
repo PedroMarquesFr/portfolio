@@ -6,7 +6,7 @@ const light =  {
     secundary: "#ff7904",
 
     background: "#DFDDF4",
-    frontItems: "#F0EFFF",
+    frontItems: "#EAE9F7",
     text: "#56546D",
     textsec: "#1C1A33",
 
