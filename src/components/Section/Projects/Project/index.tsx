@@ -17,14 +17,16 @@ const Project: React.FC<project> = ({ project }) => {
   const { instituition, title, description, tags } = project;
   return (
     <Container>
-      <InstutitionName>{instituition}</InstutitionName>
+      <InstutitionName>
+        {instituition}{" "}
+        <TagWrapper>
+          {tags.map((tag) => (
+            <DefaultDot tag={tag} />
+          ))}
+        </TagWrapper>
+      </InstutitionName>
       <h1>{title}</h1>
       <p>{description}</p>
-      <TagWrapper>
-        {tags.map((tag) => (
-          <DefaultDot tag={tag} />
-        ))}
-      </TagWrapper>
     </Container>
   );
 };

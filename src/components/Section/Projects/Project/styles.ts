@@ -17,13 +17,16 @@ export const Container = styled.div`
   transition: 0.5s;
   &:hover {
     box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.05);
-    padding:38px 0 38px 38px ;
+    padding:38px 10px 38px 38px ;
   }
 `;
 
 export const InstutitionName = styled.p`
   color: ${(props) => props.theme.colors.primary};
   font-weight: 500;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
 `;
 
 export const TagWrapper = styled.div`
