@@ -1,18 +1,30 @@
 import React from "react";
 // import { DefaultTag, ReactTag, CSSTag, HTMLTag, JSTag, StyledCompTag } from "../../../Tags/styles";
-import { Container, InstutitionName} from "./styles";
+import { Container, InstutitionName, TagWrapper } from "./styles";
+import { DefaultDot } from "../../../Tags/styles";
 
-const Project: React.FC = () => {
+interface info {
+  instituition: string;
+  title: string;
+  description: string;
+  tags: string[];
+}
+interface project {
+  project: info;
+}
+
+const Project: React.FC<project> = ({ project }) => {
+  const { instituition, title, description, tags } = project;
   return (
     <Container>
-      <InstutitionName>instituição</InstutitionName>
-      <h1>Nome do projeto</h1>
-      <p>
-        descrição do projeto Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Temporibus, hic. Culpa nesciunt consequatur illo corporis eligendi
-        itaque quasi cumque. Esse ea architecto atque impedit possimus ad. Quas
-        dicta assumenda quis?
-      </p>
+      <InstutitionName>{instituition}</InstutitionName>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <TagWrapper>
+        {tags.map((tag) => (
+          <DefaultDot tag={tag} />
+        ))}
+      </TagWrapper>
     </Container>
   );
 };
