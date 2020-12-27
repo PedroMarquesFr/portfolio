@@ -37,6 +37,7 @@ export const Switcher = styled.div`
 export const Sun = styled(BiSun)`
   fill: ${(props) => props.theme.colors.background};
   margin-top: 2px;
+  margin-left: 3px;
 `;
 
 export const Moon = styled(BiMoon)`
@@ -48,8 +49,9 @@ export const Moon = styled(BiMoon)`
 export const IconLink = styled(Link)`
   text-decoration: none;
   color: unset;
+  transition: color .5s;
   &:hover{
-    color: red;
+    color:${props=>props.theme.colors.textsec}
   }
 `;
 
