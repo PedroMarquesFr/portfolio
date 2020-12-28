@@ -45,6 +45,13 @@ export const JSTag = styled(DefaultTag)`
   }
   color: ${(props) => props.theme.colors.textsec};
 `;
+export const TSTag = styled(DefaultTag)`
+  background-color: ${(props) => props.theme.colors.ts};
+  &::before {
+    content: "TypeScript";
+  }
+  color: ${(props) => props.theme.colors.textsec};
+`;
 export const StyledCompTag = styled(DefaultTag)`
   background-color: ${(props) => props.theme.colors.sc};
   &::before {
@@ -66,6 +73,7 @@ interface Colors {
   css: string;
   html: string;
   js: string;
+  ts:string;
   sc: string;
 }
 
@@ -73,6 +81,8 @@ const selector = (tag: string, colors: Colors): string => {
   switch (tag) {
     case "js":
       return colors.js;
+    case "ts":
+      return colors.ts;
     case "css":
       return colors.css;
     case "html":

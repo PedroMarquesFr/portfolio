@@ -1,12 +1,13 @@
 import React from "react";
 
-import { Container, Resume, ProfileImg, Title, TagWrapper } from "./styles";
-import { HrLong} from "../../Ornament/style";
+import { Container, Resume, ProfileImg, Title, TagWrapper, P } from "./styles";
+import { HrLong } from "../../Ornament/style";
 import {
   ReactTag,
   CSSTag,
   HTMLTag,
   JSTag,
+  TSTag,
   StyledCompTag,
 } from "../../Tags/styles";
 
@@ -27,14 +28,15 @@ const Info: React.FC = () => {
       <Resume bold={true}>
         The objective of this site is to document by the projects my life,
         feelings, and evolution as a programmer, and show what I'm able to do as
-        a software developer, this site is a mix of a portfolio and a public
-        diary.
+        a software developer, this site is a <P>mix</P> of a <P>portfolio</P>
+        and a <P>public diary</P>.
       </Resume>
       <TagWrapper>
-        <ReactTag />
-        <CSSTag />
-        <HTMLTag />
         <JSTag />
+        <TSTag />
+        <ReactTag />
+        <HTMLTag />
+        <CSSTag />
         <StyledCompTag />
       </TagWrapper>
     </Container>

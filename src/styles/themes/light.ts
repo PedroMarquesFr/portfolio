@@ -14,6 +14,7 @@ const light =  {
     html: "#F1694B",
     css: "#4B79F1",
     js: "#F1DC4B",
+    ts:"#5790E6",
     sc: "#EE598A",
   },
 };
