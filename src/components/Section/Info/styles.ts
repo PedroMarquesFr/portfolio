@@ -7,9 +7,14 @@ export const Container = styled.div`
     padding-bottom: 60px;
   }
 `;
+
+interface Props {
+  bold: boolean;
+}
 export const Resume = styled.p`
   font-size: 18px;
   line-height: 1.5;
+  font-weight: ${(props: Props) => (props.bold ? 700 : 400)};
 `;
 export const Title = styled.h1`
   font-size: 48px;
@@ -29,4 +34,10 @@ export const TagWrapper = styled.div`
   display: flex;
   margin-top: 30px;
   flex-wrap: wrap;
+`;
+
+export const P = styled.p`
+  display: inline-block;
+  font-weight: 700;
+  color: ${(props) => props.theme.colors.primary};
 `;
