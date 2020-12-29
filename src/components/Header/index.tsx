@@ -2,7 +2,15 @@ import React, { useState, useContext } from "react";
 import { ThemeContext } from "styled-components";
 import Switch from "react-switch";
 
-import { Container, Switcher, Sun, Moon, IconLink, GitHubIcon } from "./styles";
+import {
+  Container,
+  Switcher,
+  Sun,
+  Moon,
+  IconLink,
+  GitHubIcon,
+  RoutesContainer,
+} from "./styles";
 
 // interface Props {
 //   toggleTheme(): void;
@@ -19,7 +27,11 @@ const Header: React.FC = () => {
       >
         <GitHubIcon />
       </IconLink>
-      <h4>{"<PedroMFr/>"}</h4>
+      <RoutesContainer>
+        <IconLink to="/">Home</IconLink>
+        <IconLink to="/about">About</IconLink>
+        <IconLink to="/contact">Contact</IconLink>
+      </RoutesContainer>
       <Switcher>
         <Switch
           onChange={() => {

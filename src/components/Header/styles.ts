@@ -3,6 +3,7 @@ import { BiSun, BiMoon } from "react-icons/bi";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
+
 export const Container = styled.div`
   height: 80px;
   background: ${(props) => props.theme.colors.frontItems};
@@ -22,9 +23,8 @@ export const Container = styled.div`
 
 export const RoutesContainer = styled.div`
   display: flex;
-  & p {
-    padding-right: 8px;
-  }
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const Switcher = styled.div`
@@ -49,13 +49,15 @@ export const Moon = styled(BiMoon)`
 export const IconLink = styled(Link)`
   text-decoration: none;
   color: unset;
-  transition: color .5s;
-  &:hover{
-    color:${props=>props.theme.colors.textsec}
+  transition: 0.5s;
+  &:hover {
+    color: ${(props) => props.theme.colors.textsec};
+    padding:0 5px;
   }
+
 `;
 
 export const GitHubIcon = styled(AiOutlineGithub)`
-  height: 42px; 
+  height: 42px;
   width: 42px;
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const DefaultTag = styled.p`
+export const DefaultTag = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
