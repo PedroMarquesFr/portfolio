@@ -9,8 +9,13 @@ export const DefaultTag = styled.p`
   margin: 4px;
   border-radius: 6px;
   background-color: #222531;
+
+  transition:.2s;
   &::before {
     content: "DEFLT";
+  }
+  &:hover{
+    opacity: unset;
   }
   color: white;
   font-weight: 600;

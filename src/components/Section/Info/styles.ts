@@ -32,7 +32,7 @@ export const ProfileImg = styled.img`
 
 export const TagWrapper = styled.form`
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
   flex-wrap: wrap;
 `;
 
@@ -40,4 +40,13 @@ export const P = styled.p`
   display: inline-block;
   font-weight: 700;
   color: ${(props) => props.theme.colors.primary};
+`;
+
+export const RadioInput = styled.input`
+  display: none;
+`;
+export const Title2 = styled.h2`
+  font-size:24px;
+  color:${props=>props.theme.colors.primary};
+  margin-top:26px;
 `;

@@ -1,9 +1,18 @@
 import React from "react";
 
-import { connect } from 'react-redux';
-import {changeTag} from '../../../store/ducks/TagChoice/actions';
+import { connect } from "react-redux";
+import { changeTag } from "../../../store/ducks/TagChoice/actions";
 
-import { Container, Resume, ProfileImg, Title, TagWrapper, P } from "./styles";
+import {
+  Container,
+  Resume,
+  ProfileImg,
+  Title,
+  Title2,
+  TagWrapper,
+  P,
+  RadioInput,
+} from "./styles";
 import { HrLong } from "../../Ornament/style";
 import {
   AllTag,
@@ -15,11 +24,11 @@ import {
   StyledCompTag,
 } from "../../Tags/styles";
 
-interface func{
-  changeTag:(tag:string)=> void;
+interface func {
+  changeTag: (tag: string) => void;
 }
 
-const Info: React.FC<func> = ({changeTag}) => {
+const Info: React.FC<func> = ({ changeTag }) => {
   return (
     <Container>
       <ProfileImg src="https://i.ibb.co/BKFL5GX/imagem.png"></ProfileImg>
@@ -39,32 +48,68 @@ const Info: React.FC<func> = ({changeTag}) => {
         a software developer, this site is a <P>mix</P> of a <P>portfolio</P>{" "}
         and a <P>public diary</P>.
       </Resume>
+      <Title2>Filter projects by tag:</Title2>
       <TagWrapper>
-      <input type="radio" id=" " name="tag" onChange={({target:{id}}) => changeTag(id)} />
+        <RadioInput
+          type="radio"
+          id=" "
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
         <label htmlFor=" ">
-          <AllTag/>
+          <AllTag />
         </label>
-        <input type="radio" id="js" name="tag" onChange={({target:{id}}) => changeTag(id)} />
+        <RadioInput
+          type="radio"
+          id="js"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
         <label htmlFor="js">
           <JSTag />
         </label>
-        <input type="radio" id="ts" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
+        <RadioInput
+          type="radio"
+          id="ts"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
         <label htmlFor="ts">
           <TSTag />
         </label>
-        <input type="radio" id="react" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
+        <RadioInput
+          type="radio"
+          id="react"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
         <label htmlFor="react">
           <ReactTag />
         </label>
-        <input type="radio" id="html" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
+        <RadioInput
+          type="radio"
+          id="html"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
         <label htmlFor="html">
           <HTMLTag />
         </label>
-        <input type="radio" id="css" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
+        <RadioInput
+          type="radio"
+          id="css"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
         <label htmlFor="css">
           <CSSTag />
         </label>
-        <input type="radio" id="sc" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
+        <RadioInput
+          type="radio"
+          id="sc"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
         <label htmlFor="sc">
           <StyledCompTag />
         </label>
@@ -75,4 +120,4 @@ const Info: React.FC<func> = ({changeTag}) => {
 
 const mapDispatchToProps = { changeTag };
 
-export default connect(null, mapDispatchToProps)(Info); 
+export default connect(null, mapDispatchToProps)(Info);
