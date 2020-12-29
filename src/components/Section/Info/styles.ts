@@ -30,7 +30,7 @@ export const ProfileImg = styled.img`
   border: 5px solid ${(props) => props.theme.colors.frontItems};
 `;
 
-export const TagWrapper = styled.div`
+export const TagWrapper = styled.form`
   display: flex;
   margin-top: 30px;
   flex-wrap: wrap;
