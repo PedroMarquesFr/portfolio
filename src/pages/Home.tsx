@@ -7,7 +7,6 @@ import Section from "../components/Section";
 const Home: React.FC = () => {
   return (
     <div>
-      <Header />
       <Section />
     </div>
   );

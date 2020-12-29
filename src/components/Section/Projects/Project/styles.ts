@@ -22,7 +22,7 @@ export const Container = styled.div`
   }
 `;
 
-export const InstutitionName = styled.p`
+export const InstutitionName = styled.span`
   color: ${(props) => props.theme.colors.primary};
   font-weight: 500;
   display: flex;

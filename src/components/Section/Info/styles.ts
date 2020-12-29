@@ -11,7 +11,7 @@ export const Container = styled.div`
 interface Props {
   bold: boolean;
 }
-export const Resume = styled.p`
+export const Resume = styled.span`
   font-size: 18px;
   line-height: 1.5;
   font-weight: ${(props: Props) => (props.bold ? 700 : 400)};
@@ -36,7 +36,7 @@ export const TagWrapper = styled.form`
   flex-wrap: wrap;
 `;
 
-export const P = styled.p`
+export const P = styled.span`
   display: inline-block;
   font-weight: 700;
   color: ${(props) => props.theme.colors.primary};
