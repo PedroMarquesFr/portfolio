@@ -18,7 +18,6 @@ export const Container = styled.div`
   transition: 0.5s;
   &:hover {
     box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
-    /* box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.05); */
     padding: 38px 22px 38px 38px;
   }
 `;

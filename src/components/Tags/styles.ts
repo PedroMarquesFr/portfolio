@@ -9,12 +9,25 @@ export const DefaultTag = styled.p`
   margin: 4px;
   border-radius: 6px;
   background-color: #222531;
+
+  transition:.2s;
   &::before {
     content: "DEFLT";
+  }
+  &:hover{
+    opacity: unset;
   }
   color: white;
   font-weight: 600;
   opacity: 0.85;
+`;
+
+export const AllTag = styled(DefaultTag)`
+  background-color: ${(props) => props.theme.colors.frontItems};
+  &::before {
+    content: "All";
+  }
+  color: ${(props) => props.theme.colors.textsec}
 `;
 
 export const ReactTag = styled(DefaultTag)`
@@ -22,7 +35,7 @@ export const ReactTag = styled(DefaultTag)`
   &::before {
     content: "React";
   }
-  color: ${(props) => props.theme.colors.textsec}; /* 31322F*/
+  color: ${(props) => props.theme.colors.textsec}; 
 `;
 export const CSSTag = styled(DefaultTag)`
   background-color: ${(props) => props.theme.colors.css};
