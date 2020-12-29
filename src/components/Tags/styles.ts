@@ -17,12 +17,20 @@ export const DefaultTag = styled.p`
   opacity: 0.85;
 `;
 
+export const AllTag = styled(DefaultTag)`
+  background-color: ${(props) => props.theme.colors.frontItems};
+  &::before {
+    content: "All";
+  }
+  color: ${(props) => props.theme.colors.textsec}
+`;
+
 export const ReactTag = styled(DefaultTag)`
   background-color: ${(props) => props.theme.colors.react};
   &::before {
     content: "React";
   }
-  color: ${(props) => props.theme.colors.textsec}; /* 31322F*/
+  color: ${(props) => props.theme.colors.textsec}; 
 `;
 export const CSSTag = styled(DefaultTag)`
   background-color: ${(props) => props.theme.colors.css};

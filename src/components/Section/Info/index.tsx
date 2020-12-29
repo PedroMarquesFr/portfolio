@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+
+import { connect } from 'react-redux';
+import {changeTag} from '../../../store/ducks/TagChoice/actions';
 
 import { Container, Resume, ProfileImg, Title, TagWrapper, P } from "./styles";
 import { HrLong } from "../../Ornament/style";
 import {
+  AllTag,
   ReactTag,
   CSSTag,
   HTMLTag,
@@ -11,8 +15,11 @@ import {
   StyledCompTag,
 } from "../../Tags/styles";
 
-const Info: React.FC = () => {
-  const [tag, setTag] = useState("");
+interface func{
+  changeTag:(tag:string)=> void;
+}
+
+const Info: React.FC<func> = ({changeTag}) => {
   return (
     <Container>
       <ProfileImg src="https://i.ibb.co/BKFL5GX/imagem.png"></ProfileImg>
@@ -33,34 +40,39 @@ const Info: React.FC = () => {
         and a <P>public diary</P>.
       </Resume>
       <TagWrapper>
-        <input type="radio" id="js" name="tag" onChange={({target:{id}}) => setTag(id)} />
+      <input type="radio" id=" " name="tag" onChange={({target:{id}}) => changeTag(id)} />
+        <label htmlFor=" ">
+          <AllTag/>
+        </label>
+        <input type="radio" id="js" name="tag" onChange={({target:{id}}) => changeTag(id)} />
         <label htmlFor="js">
           <JSTag />
         </label>
-        <input type="radio" id="ts" name="tag" onChange={({target:{id}}) => setTag(id)}/>
+        <input type="radio" id="ts" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
         <label htmlFor="ts">
           <TSTag />
         </label>
-        <input type="radio" id="re" name="tag" onChange={({target:{id}}) => setTag(id)}/>
-        <label htmlFor="re">
+        <input type="radio" id="react" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
+        <label htmlFor="react">
           <ReactTag />
         </label>
-        <input type="radio" id="html" name="tag" onChange={({target:{id}}) => setTag(id)}/>
+        <input type="radio" id="html" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
         <label htmlFor="html">
           <HTMLTag />
         </label>
-        <input type="radio" id="css" name="tag" onChange={({target:{id}}) => setTag(id)}/>
+        <input type="radio" id="css" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
         <label htmlFor="css">
           <CSSTag />
         </label>
-        <input type="radio" id="sc" name="tag" onChange={({target:{id}}) => setTag(id)}/>
+        <input type="radio" id="sc" name="tag" onChange={({target:{id}}) => changeTag(id)}/>
         <label htmlFor="sc">
           <StyledCompTag />
         </label>
-        <p>{tag}</p>
       </TagWrapper>
     </Container>
   );
 };
 
-export default Info;
+const mapDispatchToProps = { changeTag };
+
+export default connect(null, mapDispatchToProps)(Info); 
