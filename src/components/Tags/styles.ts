@@ -5,7 +5,7 @@ export const DefaultTag = styled.span`
   align-items: center;
   justify-content: center;
   height: 30px;
-  padding: 0 6px;
+  padding: 0 9px;
   margin: 4px;
   border-radius: 6px;
   background-color: #222531;
@@ -18,7 +18,9 @@ export const DefaultTag = styled.span`
     opacity: unset;
   }
   color: white;
+
   font-weight: 600;
+  font-size:22px;
   opacity: 0.85;
 `;
 
@@ -114,8 +116,8 @@ interface Props {
   tag: string;
 }
 export const DefaultDot = styled.div<Props>`
-  height: 7px;
-  width: 7px;
+  height: 9px;
+  width: 9px;
   margin: 0 0 0 7px;
   background-color: ${(props) => selector(props.tag, props.theme.colors)};
   border-radius: 50%;
