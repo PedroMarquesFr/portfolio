@@ -36,7 +36,7 @@ const Info: React.FC<func> = ({ changeTag }) => {
       <Title>Hi, I'm Pedro</Title>
 
       <Resume bold={false}>
-        The objective of this site is to document by the projects my life,
+        The site objective is to document by the projects my life,
         feelings, and evolution as a programmer, and show what I'm able to do as
         a software developer, this site is a <P>mix</P> of a <P>portfolio</P>{" "}
         and a <P>public diary</P>.

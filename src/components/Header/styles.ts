@@ -50,9 +50,10 @@ export const IconLink = styled(Link)`
   text-decoration: none;
   color: unset;
   transition: 0.5s;
+  padding:0 2px;
   &:hover {
     color: ${(props) => props.theme.colors.textsec};
-    padding:0 5px;
+    padding:0 7px;
   }
 
 `;
