@@ -13,7 +13,7 @@ export const Container = styled.div`
     line-height: 1.5;
   }
   h1 {
-    font-size: 21px;
+    font-size: 24px;
   }
   transition: 0.5s;
   &:hover {
@@ -39,3 +39,4 @@ export const UnstyledLink = styled(Link)`
   text-decoration: none;
   color: unset;
 `;
+
