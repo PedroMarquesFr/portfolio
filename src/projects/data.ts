@@ -14,7 +14,7 @@ export const projects = [
     description:
       "This project was inspired by a personal need. When i was in high school or university and had to study some content in video class youtube always recommended some unrelated videos which made it very difficult to concentrate. YT Focus removes the smart YouTube recommendation based on your tastes with anonymous queries. :D",
     tags: [" ", "js", "react", "css", "sc"],
-    pathname: "https://github.com/PedroMarquesFr/twitter-clone",
+    pathname: "https://github.com/PedroMarquesFr/youtube-focus",
   },
   {
     instituition: "RocketSeat",
