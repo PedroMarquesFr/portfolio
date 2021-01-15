@@ -10,17 +10,17 @@ export const DefaultTag = styled.span`
   border-radius: 6px;
   background-color: #222531;
 
-  transition:.2s;
+  transition: 0.2s;
   &::before {
     content: "DEFLT";
   }
-  &:hover{
+  &:hover {
     opacity: unset;
   }
   color: white;
 
   font-weight: 600;
-  font-size:22px;
+  font-size: 22px;
   opacity: 0.85;
 `;
 
@@ -29,7 +29,7 @@ export const AllTag = styled(DefaultTag)`
   &::before {
     content: "All";
   }
-  color: ${(props) => props.theme.colors.textsec}
+  color: ${(props) => props.theme.colors.textsec};
 `;
 
 export const ReactTag = styled(DefaultTag)`
@@ -37,7 +37,7 @@ export const ReactTag = styled(DefaultTag)`
   &::before {
     content: "React";
   }
-  color: ${(props) => props.theme.colors.textsec}; 
+  color: ${(props) => props.theme.colors.textsec};
 `;
 export const CSSTag = styled(DefaultTag)`
   background-color: ${(props) => props.theme.colors.css};
@@ -74,6 +74,13 @@ export const StyledCompTag = styled(DefaultTag)`
   }
   color: ${(props) => props.theme.colors.textsec};
 `;
+export const ReduxTag = styled(DefaultTag)`
+  background-color: ${(props) => props.theme.colors.redux};
+  &::before {
+    content: "Redux";
+  }
+  color: ${(props) => props.theme.colors.textsec};
+`;
 
 interface Colors {
   primary: string;
@@ -88,8 +95,9 @@ interface Colors {
   css: string;
   html: string;
   js: string;
-  ts:string;
+  ts: string;
   sc: string;
+  redux: string;
 }
 
 const selector = (tag: string, colors: Colors): string => {
@@ -106,7 +114,8 @@ const selector = (tag: string, colors: Colors): string => {
       return colors.react;
     case "sc":
       return colors.sc;
-
+    case "redux":
+      return colors.redux;
     default:
       return "false";
   }

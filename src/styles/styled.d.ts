@@ -19,6 +19,7 @@ declare module "styled-components" {
       js:string,
       ts:string,
       sc:string,
+      redux:string,
     };
     toggleTheme: () => void;
   }

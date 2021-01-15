@@ -16,6 +16,7 @@ const dark = {
     js: "#B88F00",
     ts:"#174EA1",
     sc: "#B80021",
+    redux:"#6233AF",
   },
 };
 
