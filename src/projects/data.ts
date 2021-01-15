@@ -5,6 +5,7 @@ export const allLearnedThings: string[] = [
   "html",
   "css",
   "sc",
+  "redux",
 ];
 
 export const projects = [
@@ -13,7 +14,7 @@ export const projects = [
     title: "Youtube Focus",
     description:
       "This project was inspired by a personal need. When i was in high school or university and had to study some content in video class youtube always recommended some unrelated videos which made it very difficult to concentrate. YT Focus removes the smart YouTube recommendation based on your tastes with anonymous queries. :D",
-    tags: [" ", "js", "react", "css", "sc"],
+    tags: [" ", "js", "react", "css", "sc", "redux"],
     pathname: "https://github.com/PedroMarquesFr/youtube-focus",
   },
   {
@@ -64,7 +65,7 @@ export const projects = [
 
     description:
       "My first intense experience using TypeScript with React, as I was already exposed to strongly typed languages like C and JAVA in college, it was easier to understand Typescript. This project was really important to practice and review styled-components, in which I was a few months away from training because of Trybe's tight schedule. I did this project at recess.",
-    tags: [" ", "ts", "react", "html", "css", "sc"],
+    tags: [" ", "ts", "react", "html", "css", "sc", "redux"],
     pathname: "https://github.com/PedroMarquesFr/portfolio",
   },
 
@@ -81,7 +82,7 @@ export const projects = [
     title: "Frontend Online Store",
     description:
       "In my first group project, my team used Agile Methodologies like Kanban and Scrum. In this project, I have learned that sometimes people are harder than code and that if all the group members are not on the same page, the project will mostly fail,  but I know that the power of an aligned group can be insane. The project itself is kind of an evolution of the Async Shopping Cart project, with more features, like choose the amount of each item, detail page with rate possibility, checkout page, payment methods. I refactored the code to use Redux, so now it has a better performance, I also improved the Home UI. Its a̶l̶m̶o̶s̶t̶ perfect 🙃, there are still some bugs and UI problems.",
-    tags: [" ", "js", "react", "html", "css"],
+    tags: [" ", "js", "react", "html", "css", "redux"],
     pathname: "https://github.com/PedroMarquesFr/project-frontend-online-store",
   },
 ];

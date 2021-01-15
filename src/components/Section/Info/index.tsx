@@ -22,6 +22,7 @@ import {
   JSTag,
   TSTag,
   StyledCompTag,
+  ReduxTag,
 } from "../../Tags/styles";
 
 interface func {
@@ -36,10 +37,10 @@ const Info: React.FC<func> = ({ changeTag }) => {
       <Title>Hi, I'm Pedro</Title>
 
       <Resume bold={false}>
-        The site objective is to document by the projects my life,
-        feelings, and evolution as a programmer, and show what I'm able to do as
-        a software developer, this site is a <P>mix</P> of a <P>portfolio</P>{" "}
-        and a <P>public diary</P>.
+        The site objective is to document by the projects my life, feelings, and
+        evolution as a programmer, and show what I'm able to do as a software
+        developer, this site is a <P>mix</P> of a <P>portfolio</P> and a{" "}
+        <P>public diary</P>.
       </Resume>
       <Title2>Filter projects by tag</Title2>
       <TagWrapper>
@@ -105,6 +106,15 @@ const Info: React.FC<func> = ({ changeTag }) => {
         />
         <label htmlFor="sc">
           <StyledCompTag />
+        </label>
+        <RadioInput
+          type="radio"
+          id="redux"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
+        <label htmlFor="redux">
+          <ReduxTag />
         </label>
       </TagWrapper>
     </Container>
