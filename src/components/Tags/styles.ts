@@ -84,7 +84,6 @@ export const ReduxTag = styled(DefaultTag)`
 
 interface Colors {
   primary: string;
-  secundary: string;
 
   background: string;
   frontItems: string;

@@ -18,14 +18,6 @@ export const projects = [
     pathname: "https://github.com/PedroMarquesFr/youtube-focus",
   },
   {
-    instituition: "RocketSeat",
-    title: "Twitter Clone",
-    description:
-      "A Twitter UI clone using Styled Components, one of my first design projects. In this project, I was able to put the Styled Components library into practice and solidify various CSS concepts",
-    tags: [" ", "ts", "react", "css", "sc"],
-    pathname: "https://github.com/PedroMarquesFr/twitter-clone",
-  },
-  {
     instituition: "Trybe",
     title: "Exercise Pokedex State",
     description:
@@ -67,6 +59,14 @@ export const projects = [
       "My first intense experience using TypeScript with React, as I was already exposed to strongly typed languages like C and JAVA in college, it was easier to understand Typescript. This project was really important to practice and review styled-components, in which I was a few months away from training because of Trybe's tight schedule. I did this project at recess.",
     tags: [" ", "ts", "react", "html", "css", "sc", "redux"],
     pathname: "https://github.com/PedroMarquesFr/portfolio",
+  },
+  {
+    instituition: "RocketSeat",
+    title: "Twitter Clone",
+    description:
+      "A Twitter UI clone using Styled Components, one of my first design projects. In this project, I was able to put the Styled Components library into practice and solidify various CSS concepts",
+    tags: [" ", "ts", "react", "css", "sc"],
+    pathname: "https://github.com/PedroMarquesFr/twitter-clone",
   },
 
   {

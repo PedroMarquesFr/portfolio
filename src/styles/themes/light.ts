@@ -3,7 +3,6 @@ const light =  {
 
   colors: {
     primary: "#4236CF",
-    secundary: "#ff7904",
 
     background: "#DFDDF4",
     frontItems: "#EAE9F7",
