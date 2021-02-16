@@ -10,7 +10,7 @@ export const Container = styled.div`
       overflow-y: scroll;
     }
   }
-  height: 80vh;
+  height: 82vh;
   overflow-x: scroll;
   ::-webkit-scrollbar {
     display: none;

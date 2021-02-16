@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 10px;
   background-color: ${(props) => props.theme.colors.frontItems};
   border-radius: 24px;
-
+  width:98%;
   p {
     opacity: 0.8;
     font-size: 18px;
@@ -17,7 +17,7 @@ export const Container = styled.div`
   }
   transition: 0.5s;
   &:hover {
-    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: 0px 0px 0px 3px rgba(50, 50, 50, 0.1);
     padding: 38px 22px 38px 38px;
   }
 `;

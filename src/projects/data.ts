@@ -19,6 +19,22 @@ export const projects = [
   },
   {
     instituition: "Trybe",
+    title: "Recipe App",
+    description:
+      "Group project using AGILE methodologies like SCRUM and KANBAN 98.4% out of all 87 requirements",
+    tags: [" ", "js", "react", "css", "redux"],
+    pathname: "https://github.com/PedroMarquesFr/recipe-app",
+  },
+  {
+    instituition: "Trybe",
+    title: "Trybe Wallet",
+    description:
+      "A cool wallet expense manager",
+    tags: [" ", "js", "react", "css", "sc", "redux"],
+    pathname: "https://github.com/PedroMarquesFr/trybe-wallet",
+  },
+  {
+    instituition: "Trybe",
     title: "Exercise Pokedex State",
     description:
       "It's just a Trybe bonus exercise to practice the React State, I've always been an insecure person, but I felt so good while doing the exercise requirements, felt so empowered, I felt through the lines of code that I can do and learn anything I want. This exercise enforces this feeling inside me, that's why it's here.",
