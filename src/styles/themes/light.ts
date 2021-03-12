@@ -4,7 +4,7 @@ const light =  {
   colors: {
     primary: "#4236CF",
 
-    background: "#DFDDF4",
+    background: "#E6E4F6",
     frontItems: "#EAE9F7",
     text: "#56546D",
     textsec: "#1C1A33",
