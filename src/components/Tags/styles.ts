@@ -9,6 +9,7 @@ export const DefaultTag = styled.span`
   margin: 4px;
   border-radius: 6px;
   background-color: #222531;
+  cursor: pointer;
 
   transition: 0.2s;
   &::before {
