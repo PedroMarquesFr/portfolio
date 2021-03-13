@@ -16,6 +16,8 @@ const dark = {
     ts:"#174EA1",
     sc: "#B80021",
     redux:"#6233AF",
+    node:"#43853C",
+    next:"#282828"
   },
 };
 

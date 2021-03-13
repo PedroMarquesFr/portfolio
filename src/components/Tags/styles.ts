@@ -82,6 +82,21 @@ export const ReduxTag = styled(DefaultTag)`
   }
   color: ${(props) => props.theme.colors.textsec};
 `;
+export const NodeTag = styled(DefaultTag)`
+  background-color: ${(props) => props.theme.colors.node};
+  &::before {
+    content: "Nodejs";
+  }
+  color: ${(props) => props.theme.colors.textsec};
+`;
+
+export const NextTag = styled(DefaultTag)`
+  background-color: ${(props) => props.theme.colors.next};
+  &::before {
+    content: "Nextjs";
+  }
+  color: ${(props) => props.theme.colors.textsec};
+`;
 
 interface Colors {
   primary: string;
@@ -98,6 +113,8 @@ interface Colors {
   ts: string;
   sc: string;
   redux: string;
+  node: string;
+  next: string;
 }
 
 const selector = (tag: string, colors: Colors): string => {
@@ -116,6 +133,10 @@ const selector = (tag: string, colors: Colors): string => {
       return colors.sc;
     case "redux":
       return colors.redux;
+    case "node":
+      return colors.node;
+    case "next":
+      return colors.next;
     default:
       return "false";
   }

@@ -10,15 +10,17 @@ declare module "styled-components" {
       background: string;
       frontItems: string;
       text: string;
-      textsec:string;
+      textsec: string;
 
-      react:string,
-      css:string,
-      html:string,
-      js:string,
-      ts:string,
-      sc:string,
-      redux:string,
+      react: string;
+      css: string;
+      html: string;
+      js: string;
+      ts: string;
+      sc: string;
+      redux: string;
+      node: string;
+      next: string;
     };
     toggleTheme: () => void;
   }

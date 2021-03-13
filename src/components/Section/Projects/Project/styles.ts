@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 10px;
   background-color: ${(props) => props.theme.colors.frontItems};
   border-radius: 24px;
-  width:98%;
+  width: 98%;
   p {
     opacity: 0.8;
     font-size: 18px;
@@ -19,6 +19,9 @@ export const Container = styled.div`
   &:hover {
     box-shadow: 0px 0px 0px 3px rgba(50, 50, 50, 0.1);
     padding: 38px 22px 38px 38px;
+    & ~ h1 {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -39,4 +42,3 @@ export const UnstyledLink = styled(Link)`
   text-decoration: none;
   color: unset;
 `;
-

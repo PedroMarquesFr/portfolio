@@ -6,6 +6,8 @@ export const allLearnedThings: string[] = [
   "css",
   "sc",
   "redux",
+  "node",
+  "next",
 ];
 
 export const projects = [
@@ -28,8 +30,7 @@ export const projects = [
   {
     instituition: "Trybe",
     title: "Trybe Wallet",
-    description:
-      "A cool wallet expense manager",
+    description: "A cool wallet expense manager",
     tags: [" ", "js", "react", "css", "sc", "redux"],
     pathname: "https://github.com/PedroMarquesFr/trybe-wallet",
   },
@@ -100,5 +101,21 @@ export const projects = [
       "In my first group project, my team used Agile Methodologies like Kanban and Scrum. In this project, I have learned that sometimes people are harder than code and that if all the group members are not on the same page, the project will mostly fail,  but I know that the power of an aligned group can be insane. The project itself is kind of an evolution of the Async Shopping Cart project, with more features, like choose the amount of each item, detail page with rate possibility, checkout page, payment methods. I refactored the code to use Redux, so now it has a better performance, I also improved the Home UI. Its a̶l̶m̶o̶s̶t̶ perfect 🙃, there are still some bugs and UI problems.",
     tags: [" ", "js", "react", "html", "css", "redux"],
     pathname: "https://github.com/PedroMarquesFr/project-frontend-online-store",
+  },
+  {
+    instituition: "Me",
+    title: "Next Movie Search",
+    description:
+      "Pretty Movie/Game/Searie searcher the way a found to practice and learn Next.js :)",
+    tags: [" ", "ts", "react", "html", "sc", "next"],
+    pathname: "https://github.com/PedroMarquesFr/search-movie-app-refactored",
+  },
+  {
+    instituition: "Trybe",
+    title: "Store Manager",
+    description:
+      "RESTful API using MSC architecture",
+    tags: [" ", "js", "node"],
+    pathname: "https://github.com/PedroMarquesFr/p-trybe-store-manager",
   },
 ];

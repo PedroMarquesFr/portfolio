@@ -23,6 +23,8 @@ import {
   TSTag,
   StyledCompTag,
   ReduxTag,
+  NodeTag,
+  NextTag
 } from "../../Tags/styles";
 
 interface func {
@@ -115,6 +117,24 @@ const Info: React.FC<func> = ({ changeTag }) => {
         />
         <label htmlFor="redux">
           <ReduxTag />
+        </label>
+        <RadioInput
+          type="radio"
+          id="node"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
+        <label htmlFor="node">
+          <NodeTag />
+        </label>
+        <RadioInput
+          type="radio"
+          id="next"
+          name="tag"
+          onChange={({ target: { id } }) => changeTag(id)}
+        />
+        <label htmlFor="next">
+          <NextTag />
         </label>
       </TagWrapper>
     </Container>

@@ -16,6 +16,8 @@ const light =  {
     ts:"#5790E6",
     sc: "#EE598A",
     redux:"#8867BE",
+    node:"#60A159",
+    next:"#474747"
   },
 };
 
