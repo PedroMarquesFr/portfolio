@@ -39,7 +39,7 @@ export const TagWrapper = styled.form`
 export const P = styled.span`
   display: inline-block;
   font-weight: 700;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.text};
 `;
 
 export const RadioInput = styled.input`

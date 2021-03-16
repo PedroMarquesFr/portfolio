@@ -23,7 +23,7 @@ const Project: React.FC<project> = ({ project }) => {
         target="_blank"
       >
         <InstutitionName>
-          {instituition}{" "}
+          {instituition.toUpperCase()}{" "}
           <TagWrapper>
             {tags.map((tag) => (
               <DefaultDot tag={tag} key={tag}/>

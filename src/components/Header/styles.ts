@@ -15,7 +15,7 @@ export const Container = styled.div`
   padding: 0 17vw;
   @media only screen and (max-width: 800px) {
     & {
-      padding: 0 5vw;
+      padding: 0 1vw;
       height: 100px;
     }
   }
@@ -55,7 +55,11 @@ export const IconLink = styled(Link)`
     color: ${(props) => props.theme.colors.textsec};
     padding:0 7px;
   }
-
+  @media only screen and (max-width: 800px) {
+    & {
+      font-size:22px;
+    }
+  }
 `;
 
 export const GitHubIcon = styled(AiOutlineGithub)`

@@ -6,7 +6,8 @@ export const Container = styled.div`
   margin: 10px;
   background-color: ${(props) => props.theme.colors.frontItems};
   border-radius: 24px;
-  width: 98%;
+  /* border:1px solid #F4F4F4; */
+  width: 97%;
   p {
     opacity: 0.8;
     font-size: 18px;
@@ -14,20 +15,21 @@ export const Container = styled.div`
   }
   h1 {
     font-size: 24px;
+    font-weight: 600;
   }
   transition: 0.5s;
   &:hover {
-    box-shadow: 0px 0px 0px 3px rgba(50, 50, 50, 0.1);
-    padding: 38px 22px 38px 38px;
-    & ~ h1 {
-      font-size: 30px;
-    }
+    transform: translate(0, -5px);
+
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07);
+    box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07);
   }
 `;
 
 export const InstutitionName = styled.span`
   color: ${(props) => props.theme.colors.primary};
-  font-weight: 500;
+  font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

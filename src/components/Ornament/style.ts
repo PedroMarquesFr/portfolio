@@ -19,9 +19,10 @@ export const Container = styled.div`
 export const HrLong = styled.div`
   padding: 0;
   height: 4px;
-  width: 100px;
+  width: 32px;
   background-color: ${(props) => props.theme.colors.primary};
   margin-top: 24px;
+  margin-left:3px;
   border-radius: 50px;
 `;
 export const HrShort = styled(HrLong)`

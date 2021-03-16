@@ -38,11 +38,11 @@ const Header: React.FC = () => {
             toggleTheme();
             setSwift(!swift);
           }}
-          offColor="#B5B3CD"
-          onColor="#56546D"
+          offColor="#F8F9FA"
+          onColor="#77838F"
           checked={swift}
-          offHandleColor="#56546D"
-          onHandleColor="#B5B3CD"
+          offHandleColor="#77838F"
+          onHandleColor="#F8F9FA"
           checkedIcon={<Moon />}
           uncheckedIcon={<Sun />}
         />

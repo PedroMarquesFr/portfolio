@@ -2,12 +2,12 @@ const light =  {
   title: "light",
 
   colors: {
-    primary: "#4236CF",
+    primary: "#43505e",
 
-    background: "#E6E4F6",
-    frontItems: "#EAE9F7",
-    text: "#56546D",
-    textsec: "#1C1A33",
+    background: "#F8F9FA",
+    frontItems: "#FFFFFF",
+    text: "#77838F",
+    textsec: "#000",
 
     react: "#5BCEED",
     html: "#F1694B",

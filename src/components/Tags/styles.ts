@@ -22,7 +22,7 @@ export const DefaultTag = styled.span`
 
   font-weight: 600;
   font-size: 22px;
-  opacity: 0.85;
+  opacity: 0.8;
 `;
 
 export const AllTag = styled(DefaultTag)`
