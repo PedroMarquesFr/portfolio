@@ -34,7 +34,7 @@ interface func {
 const Info: React.FC<func> = ({ changeTag }) => {
   return (
     <Container>
-      <ProfileImg src="https://i.ibb.co/BKFL5GX/imagem.png"></ProfileImg>
+      <ProfileImg src="https://i.ibb.co/8c0NYFX/20210316-112521-2.jpg"></ProfileImg>
       <HrLong />
       <Title>Hi, I'm Pedro</Title>
 
