@@ -99,7 +99,7 @@ export const projects = [
     title: "Frontend Online Store",
     description:
       "In my first group project, my team used Agile Methodologies like Kanban and Scrum. In this project, I have learned that sometimes people are harder than code and that if all the group members are not on the same page, the project will mostly fail,  but I know that the power of an aligned group can be insane. The project itself is kind of an evolution of the Async Shopping Cart project, with more features, like choose the amount of each item, detail page with rate possibility, checkout page, payment methods. I refactored the code to use Redux, so now it has a better performance, I also improved the Home UI. Its a̶l̶m̶o̶s̶t̶ perfect 🙃, there are still some bugs and UI problems.",
-    tags: [" ", "js", "react", "html", "css", "redux"],
+    tags: [" ", "js", "react", "node", "css", "redux"],
     pathname: "https://github.com/PedroMarquesFr/project-frontend-online-store",
   },
   {
@@ -113,9 +113,40 @@ export const projects = [
   {
     instituition: "Trybe",
     title: "Store Manager",
-    description:
-      "RESTful API using MSC architecture",
+    description: "RESTful API using MSC architecture",
     tags: [" ", "js", "node"],
     pathname: "https://github.com/PedroMarquesFr/p-trybe-store-manager",
+  },
+  {
+    instituition: "Trybe",
+    title: "API CookMaster",
+    description:
+      "RESTful API using MSC architecture, JWT authentication and file upload",
+    tags: [" ", "js", "node"],
+    pathname: "https://github.com/PedroMarquesFr/p-trybe-cookmaster",
+  },
+  {
+    instituition: "Trybe",
+    title: "Front CookMaster",
+    description:
+      "🚧 In developement... 🚧 Frontend CookMaster with register, login, upload and CRUD functionalities, made with React, Typescript, Redux, Tailwind and API CookMaster",
+    tags: [" ", "ts", "react", "redux"],
+    pathname: "https://github.com/PedroMarquesFr/cookmaster-front",
+  },
+  {
+    instituition: "ME",
+    title: "Images Web Scrapper",
+    description:
+      "Simple API that returns array of image links based on the inserted key",
+    tags: [" ", "js", "node"],
+    pathname: "https://images-web-scrapper-1212.herokuapp.com/",
+  },
+  {
+    instituition: "ME",
+    title: "Search Movie App",
+    description:
+      "Simple API that returns array of image links based on the inserted key",
+    tags: ["ts", "react", "css", "sc", "node", "next"],
+    pathname: "https://github.com/PedroMarquesFr/search-movie-app-refactored",
   },
 ];
