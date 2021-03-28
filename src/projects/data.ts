@@ -107,7 +107,7 @@ export const projects = [
     title: "Next Movie Search",
     description:
       "Pretty Movie/Game/Searie searcher the way a found to practice and learn Next.js :)",
-    tags: [" ", "ts", "react", "html", "sc", "next"],
+    tags: [" ", "ts", "react", "html", "sc","node", "next"],
     pathname: "https://github.com/PedroMarquesFr/search-movie-app-refactored",
   },
   {
