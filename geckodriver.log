@@ -1,0 +1,6 @@
+1618581905049	geckodriver	INFO	Listening on 127.0.0.1:4444
+1618581905259	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4yGN5O"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618581907921	Marionette	INFO	Listening on port 41527
+JavaScript error: http://localhost:3000/static/js/0.chunk.js, line 69162: TypeError: b is undefined
+1618581913470	Marionette	INFO	Stopped listening on port 41527

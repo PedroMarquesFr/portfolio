@@ -17,13 +17,14 @@ export const Container = styled.div`
     font-size: 24px;
     font-weight: 600;
   }
-  transition: 0.5s;
+  transition: 0.5s transform;
   &:hover {
     transform: translate(0, -5px);
+    border: 2px solid ${(props) => props.theme.colors.primary};
 
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07);
+    /* -webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07);
     -moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07);
-    box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07);
+    box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.07); */
   }
 `;
 
